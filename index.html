@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atakan Oyun Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="menuList">
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#sunucu">Minecraft Sunucumuz</a></li>
+            <li><a href="#iletisim">Bize Ulaş / Sponsorluk</a></li>
+            <li><a href="#" onclick="toggleLanguage()">🌐</a></li>
+        </ul>
+    </nav>
+
+    <section id="anasayfa">
+        <h1>Hoş geldiniz!</h1>
+        <p>Oyun içerikleri ve tasarımlarıyla yakında buradayız.</p>
+    </section>
+
+    <section id="sunucu">
+        <h2>Minecraft Sunucularımız</h2>
+        <p>Yakında geliyor! Takipte kalın.</p>
+    </section>
+
+    <section id="iletisim">
+        <h2>Bize Ulaş / Sponsorluk</h2>
+        <p>📧 atakanzeyp@gmail.com</p>
+        <p>📱 +90 551 676 82 62</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Atakan | Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuList");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        function toggleLanguage() {
+            alert("TR / EN / DE dilleri yakında aktif olacak.");
+        }
+    </script>
+</body>
+</html>
